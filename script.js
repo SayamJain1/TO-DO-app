@@ -9,6 +9,7 @@ addButton.addEventListener("click", () => {
     let createDiv = document.createElement("div");
     let li = document.createElement("li");
     let liButton = document.createElement("button");
+    liButton.style.backgroundColor = "red";
     let buttonNode = document.createTextNode("X");
     liButton.appendChild(buttonNode);
     ul.appendChild(createDiv);
@@ -21,6 +22,6 @@ addButton.addEventListener("click", () => {
       ul.removeChild(createDiv);
     });
   } else {
-    message.innerText = "Write your first to-do work today.";
+    message.innerText = "Write your first to-do work for today.";
   }
 });
